@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degala Shaik Inthiyaz Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#050816;
+      color:white;
+      overflow-x:hidden;
+      font-family:Arial,sans-serif;
+    }
+
+    .gradient-text{
+      background:linear-gradient(to right,#8b5cf6,#38bdf8);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(12px);
+    }
+
+    .glow{
+      box-shadow:0 0 25px rgba(139,92,246,0.5);
+    }
+
+    .floating{
+      animation:float 4s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-20px);
+      }
+      100%{
+        transform:translateY(0px);
+      }
+    }
+
+    .rotate-card:hover{
+      transform:rotateY(12deg) rotateX(5deg);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="flex justify-between items-center px-8 md:px-20 py-6 fixed w-full top-0 z-50 bg-[#050816]/80 backdrop-blur-lg">
+
+  <h1 class="text-3xl font-bold gradient-text">
+    Degala Shaik Inthiyaz
+  </h1>
+
+  <ul class="hidden md:flex gap-10 text-gray-300">
+
+    <li><a href="#home" class="hover:text-purple-400">Home</a></li>
+
+    <li><a href="#about" class="hover:text-purple-400">About</a></li>
+
+    <li><a href="#skills" class="hover:text-purple-400">Skills</a></li>
+
+    <li><a href="#projects" class="hover:text-purple-400">Projects</a></li>
+
+    <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
+
+  </ul>
+
+</nav>
+
+
+
+<!-- HERO SECTION -->
+
+<section id="home" class="min-h-screen flex flex-col md:flex-row justify-center items-center px-8 md:px-20 pt-32">
+
+  <!-- LEFT -->
+
+  <div class="md:w-1/2 space-y-8">
+
+    <p class="text-purple-400 font-semibold text-lg">
+      B.Tech CSE Student
+    </p>
+
+    <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+
+      Aspiring Full Stack
+
+      <span class="gradient-text">
+        Developer
+      </span>
+
+    </h1>
+
+    <p class="text-gray-400 text-lg leading-9">
+
+      Passionate about building modern responsive websites and full stack applications using Java, JavaScript, Tailwind CSS, and MySQL.
+
+    </p>
+
+
+    <!-- BUTTONS -->
+
+    <div class="flex gap-5 flex-wrap">
+
+      <a href="Inthiyaz_Degala_resume(1).pdf" download>
+
+        <button class="bg-purple-600 px-7 py-4 rounded-2xl glow hover:scale-105 transition">
+
+          Download Resume
+
+        </button>
+
+      </a>
+
+      <a href="#contact">
+
+        <button class="border border-purple-500 px-7 py-4 rounded-2xl hover:bg-purple-600 transition">
+
+          Contact Me
+
+        </button>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- RIGHT -->
+
+  <div class="md:w-1/2 flex justify-center mt-20 md:mt-0">
+
+    <div class="floating">
+
+      <div class="card glow rotate-card transition duration-500 rounded-[40px] p-10">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png"
+          class="w-[320px]"
+        >
+
+        <div class="text-center mt-6">
+
+          <h2 class="text-3xl font-bold">
+
+            Java Full Stack Developer
+
+          </h2>
+
+          <p class="text-gray-400 mt-3">
+
+            Creating futuristic web experiences
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="px-8 md:px-20 py-24">
+
+  <h2 class="text-5xl font-bold gradient-text mb-14">
+
+    About Me
+
+  </h2>
+
+  <div class="card glow rounded-[40px] p-12 leading-10 text-gray-300 text-lg">
+
+    I am a 3rd-year B.Tech Computer Science student with hands-on experience in Java Full Stack Development through an ongoing internship at BlackBugs. Skilled in building responsive web applications using HTML, CSS, JavaScript, Tailwind CSS, Java, and MySQL. Passionate about learning new technologies and creating attractive modern user experiences.
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="px-8 md:px-20 py-24">
+
+  <h2 class="text-5xl font-bold gradient-text mb-16">
+
+    Technical Skills
+
+  </h2>
+
+
+  <div class="grid md:grid-cols-4 gap-8">
+
+    <div class="card glow rounded-[30px] p-8 hover:-translate-y-3 transition">
+
+      <h3 class="text-2xl font-bold mb-5">
+        Languages
+      </h3>
+
+      <ul class="space-y-4 text-gray-300">
+
+        <li>✔ Java</li>
+
+        <li>✔ Python</li>
+
+        <li>✔ C</li>
+
+        <li>✔ JavaScript</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div class="card glow rounded-[30px] p-8 hover:-translate-y-3 transition">
+
+      <h3 class="text-2xl font-bold mb-5">
+        Frontend
+      </h3>
+
+      <ul class="space-y-4 text-gray-300">
+
+        <li>✔ HTML</li>
+
+        <li>✔ CSS</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div class="card glow rounded-[30px] p-8 hover:-translate-y-3 transition">
+
+      <h3 class="text-2xl font-bold mb-5">
+        Backend
+      </h3>
+
+      <ul class="space-y-4 text-gray-300">
+
+        <li>✔ Java</li>
+
+        <li>✔ MySQL</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div class="card glow rounded-[30px] p-8 hover:-translate-y-3 transition">
+
+      <h3 class="text-2xl font-bold mb-5">
+        Tools
+      </h3>
+
+      <ul class="space-y-4 text-gray-300">
+
+        <li>✔ Git</li>
+
+        <li>✔ GitHub</li>
+
+        <li>✔ VS Code</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- EXPERIENCE -->
+
+<section class="px-8 md:px-20 py-24">
+
+  <h2 class="text-5xl font-bold gradient-text mb-16">
+
+    Internship Experience
+
+  </h2>
+
+  <div class="card glow rounded-[30px] p-10">
+
+    <h3 class="text-3xl font-bold">
+      Java Full Stack Intern
+    </h3>
+
+    <p class="text-purple-400 mt-2">
+      BlackBugs | 2024 - Present
+    </p>
+
+    <ul class="mt-6 space-y-4 text-gray-300 leading-8">
+
+      <li>
+        ✔ Developed responsive web applications using Java, HTML, CSS, JavaScript, and MySQL.
+      </li>
+
+      <li>
+        ✔ Worked on frontend-backend integration and real-time applications.
+      </li>
+
+      <li>
+        ✔ Collaborated with senior developers to improve user experience.
+      </li>
+
+      <li>
+        ✔ Gained knowledge in software development lifecycle and deployment.
+      </li>
+
+    </ul>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="px-8 md:px-20 py-24">
+
+  <h2 class="text-5xl font-bold gradient-text mb-16">
+
+    Projects
+
+  </h2>
+
+
+  <div class="grid md:grid-cols-2 gap-10">
+
+    <div class="card glow rounded-[35px] p-10 hover:scale-105 transition">
+
+      <h3 class="text-3xl font-bold mb-5">
+
+        E-Commerce Website
+
+      </h3>
+
+      <p class="text-gray-300 leading-9">
+
+        Developed a fully responsive e-commerce website using HTML, CSS, JavaScript, and Tailwind CSS with shopping cart, navigation, and mobile-friendly design.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="card glow rounded-[35px] p-10 hover:scale-105 transition">
+
+      <h3 class="text-3xl font-bold mb-5">
+
+        Personal Portfolio Website
+
+      </h3>
+
+      <p class="text-gray-300 leading-9">
+
+        Designed and developed a modern futuristic portfolio website with 3D UI effects, animations, responsive design, and smooth scrolling.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- CERTIFICATIONS -->
+
+<section class="px-8 md:px-20 py-24">
+
+  <h2 class="text-5xl font-bold gradient-text mb-16">
+
+    Certifications
+
+  </h2>
+
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="card glow rounded-[30px] p-8">
+
+      <h3 class="text-2xl font-bold">
+        Quick Quantum Computing
+      </h3>
+
+      <p class="text-purple-400 mt-3">
+        NPTEL
+      </p>
+
+    </div>
+
+
+    <div class="card glow rounded-[30px] p-8">
+
+      <h3 class="text-2xl font-bold">
+        Prompt Engineering
+      </h3>
+
+      <p class="text-purple-400 mt-3">
+        IBM / edX
+      </p>
+
+    </div>
+
+
+    <div class="card glow rounded-[30px] p-8">
+
+      <h3 class="text-2xl font-bold">
+        Excel for Beginners
+      </h3>
+
+      <p class="text-purple-400 mt-3">
+        edX Certified
+      </p>
+
+    </div>
+
+
+    <div class="card glow rounded-[30px] p-8">
+
+      <h3 class="text-2xl font-bold">
+        AI & Machine Learning Workshop
+      </h3>
+
+      <p class="text-purple-400 mt-3">
+        Workshop
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="px-8 md:px-20 py-24">
+
+  <div class="card glow rounded-[40px] p-14 text-center">
+
+    <h2 class="text-5xl font-bold gradient-text mb-10">
+
+      Contact Me
+
+    </h2>
+
+    <p class="text-2xl text-gray-300 mb-6">
+
+      📧 inthiyazdegala@gmail.com
+
+    </p>
+
+    <p class="text-2xl text-gray-300 mb-6">
+
+      📞 +91 9110763153
+
+    </p>
+
+    <p class="text-2xl text-gray-300">
+
+      📍 Sirivella, Andhra Pradesh
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="text-center py-10 border-t border-gray-800 text-gray-400">
+
+  © 2026 Degala Shaik Inthiyaz | Full Stack Developer
+
+</footer>
+
+</body>
+</html>
